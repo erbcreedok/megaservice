@@ -3,7 +3,6 @@
     overflow: visible;
   }
   .control-container {
-    width: 738px;
     margin: auto;
     position: relative;
     .control-image {
@@ -13,28 +12,55 @@
     .control-first, .control-second, .control-third {
       position: absolute;
     }
-    .control-first {
-      top: 116px;
-      left: 428px;
-    }
-    .control-second {
-      top: 344px;
-      left: 234px;
-    }
-    .control-third {
-      top: 344px;
-      left: 540px;
-    }
     .control-button {
       animation: pulse 1000ms infinite ease-in-out;
     }
     .popover {
       font-family: inherit;
       max-width: none;
-      width: 340px;
       border: none;
       box-shadow: 0 0 4px 0 rgba($lightgray-secondary,0.50);
     }
+
+    @include media-breakpoint-down(sm) {
+      width: 270px;
+      .popover {
+        width: 200px;
+      }
+      .control-first {
+        top: 114px;
+        left: 125px;
+      }
+      .control-second {
+        top: 400px;
+        left: 125px;
+      }
+      .control-third {
+        top: 684px;
+        left: 125px;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      width: 738px;
+      .control-first {
+        top: 116px;
+        left: 428px;
+      }
+      .control-second {
+        top: 344px;
+        left: 234px;
+      }
+      .control-third {
+        top: 344px;
+        left: 540px;
+      }
+      .popover {
+        width: 340px;
+      }
+    }
+
+    // POPOVER CSS
     .arrow::after, .bs-popover-auto[x-placement^="top"] .arrow::after {
       border-width: 1.4rem 1.4rem 0;
     }

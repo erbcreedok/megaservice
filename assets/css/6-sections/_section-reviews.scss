@@ -5,4 +5,9 @@
     background: $whitegray-secondary;
     margin: 0 34px;
   }
+  @include media-breakpoint-down(sm) {
+    .slider-arrow {
+      top: auto;
+    }
+  }
 }

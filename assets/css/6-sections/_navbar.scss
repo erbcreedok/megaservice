@@ -1,5 +1,5 @@
 header {
-  height: 130px;
+  height: 140px;
 }
 .navbar {
   font-size: 1.6rem;
@@ -139,7 +139,6 @@ header {
   background: $white;
   padding: 10px 0;
   color: $black;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   .navbar-brand span, .nav-link, .nav-link:hover, .nav-item-subtitle {
     color: $black;
   }
@@ -170,11 +169,10 @@ header {
 
 @include media-breakpoint-down(sm) {
   header {
-    height: 50px;
+    height: 110px;
   }
   .navbar {
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    min-height: 50px;
+    min-height: 60px;
     padding: 10px 0;
     @include filled-navbar;
   }
@@ -217,6 +215,9 @@ header {
   .main-nav .nav-item {
     font-size: 1.2rem;
     padding: 0 0.2rem;
+  }
+  .button-nav  button{
+    min-width: 0;
   }
 }
 @include media-breakpoint-up(xl) {

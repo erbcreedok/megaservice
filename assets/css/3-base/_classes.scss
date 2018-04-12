@@ -37,6 +37,11 @@
 .pb-6 {
   padding-bottom: 60px;
 }
+.pb-md-6 {
+  @include media-breakpoint-up(md) {
+    padding-bottom: 60px !important;
+  }
+}
 .pb-75 {
   padding-bottom: 75px;
 }
@@ -168,6 +173,9 @@
 }
 .fadein-right {
   animation: fadein-right 200ms ease-in forwards;
+}
+.fadein-bottom {
+  animation: fadein-bottom 800ms ease-in-out forwards;
 }
 .fadeout-left {
   animation: fadeout-left 200ms ease-out forwards;

@@ -15,7 +15,11 @@ footer {
   .social-links {
     font-size: 3rem;
     line-height: 3rem;
+    max-width: 150px;
     margin: -7px -8px -8px -7px;
+    @include media-breakpoint-down(sm) {
+      margin: -7px auto -8px;
+    }
     a {
       display: inline-block;
       margin: 7px 8px 8px 7px;

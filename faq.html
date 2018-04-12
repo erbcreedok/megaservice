@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="MegaService - Кассовые аппараты с онлайн передачей данных, Фискальные регистраторы с онлайн передачей данных, Денежные ящики, ПОС Терминалы, Счетчики банкнот, Детекторы валют, Сканеры штрих кода">
+    <meta name="keywords" content="MegaService, Кассовые аппараты, Кассовые аппараты с онлайн передачей данных, Фискальные регистраторы с онлайн передачей данных, Денежные ящики, ПОС Терминалы, Счетчики банкнот, Детекторы валют, Сканеры штрих кода">
+    <meta name="author" content="Elefanto">
+    <title>MegaService - Кассовые аппараты с онлайн передачей данных, Фискальные регистраторы с онлайн передачей данных, Денежные ящики, ПОС Терминалы, Счетчики банкнот, Детекторы валют, Сканеры штрих кода</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- build:css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- endbuild -->
+
+</head>
+
+<body>
+<input type="hidden" value="faq" id="sitepage">
+<header data-waypoint="main">
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav main-nav mx-auto justify-content-around">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#main">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#categories">Категории</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#advantages">Преимущества</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#reviews">Отзывы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contacts">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav d-md-none d-block">
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">
+                            <span class="icon-faq"></span>
+                            <span>Вопросы/Ответы</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav phone-nav">
+                    <li class="nav-item">
+                        <a class="phone-link nav-link" href="tel: +77751422212" title="8 (775) 142 22 12">
+                            <span >8 717 257-05-88</span>
+                        </a>
+                        <p class="nav-item-subtitle nav-link">
+                            Звонки по Казахстану
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <ul class="navbar-nav button-nav ml-auto">
+                <li class="nav-item">
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#callbackModal">
+                        <span class="icon-chat"></span>
+                        <span class="d-md-none d-lg-inline-block">Свяжитесь с нами</span>
+                    </button>
+                </li>
+            </ul>
+            <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="d-none d-md-inline-block mr-3"> Меню </span>
+                <span class="navbar-toggler-icon">
+                    <span class="navbar-toggler-icon-line"></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+    <div class="subheader">
+        <div class="container">
+            <div class="row main-row align-items-center">
+                <div class="search-bar d-flex align-items-center mr-auto">
+                    <form class="input-group">
+                        <input type="text" name="name" class="form-control" placeholder="Введите название для поиска товара">
+                        <div class="input-group-append">
+                            <select name="category" class="custom-select" id="subheader-category">
+                                <option selected value="all">Все категории</option>
+                                <option value="1">Кассовые аппараты</option>
+                                <option value="2">Весы</option>
+                                <option value="3">Денежные ящики</option>
+                                <option value="4">ПОС Терминалы</option>
+                                <option value="5">Счетчики банкнот</option>
+                                <option value="5">Детекторы валют</option>
+                                <option value="5">Сканер штраз стизорского</option>
+                            </select>
+                        </div>
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <button class="btn-search" type="button">
+                                    <span class="icon-search"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="open-search pl-4">
+                    <span class="icon-search mx-2"></span>
+                    <span>Поиск товара</span>
+                </div>
+                <div class="user-links text-right ml-auto">
+                    <a href="faq.html" class="d-none d-md-inline-block">
+                        <span class="icon-faq"></span>
+                        <span class="d-none d-lg-inline-block">Вопросы/Ответы</span>
+                        <span class="d-inline-block d-lg-none">F.A.Q</span>
+                    </a>
+                    <a href="#">
+                        <span class="icon-favorite"></span>
+                        <span class="d-none d-lg-inline-block">Избранное</span>
+                        <span class="round-17 bg-purple-default color-white">
+                                0
+                            </span>
+                    </a>
+                    <a href="#">
+                        <span class="icon-cart"></span>
+                        <span class="d-none d-lg-inline-block">Корзина</span>
+                        <span class="round-17 bg-secondary color-white">
+                                2
+                            </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="section-faq py-75">
+    <div class="container">
+        <h2 class="mb-4">
+            Вопросы и ответы
+        </h2>
+        <p class="bigger mb-35" style="max-width: 765px">
+            Здесь собраны ответы на частозадаваемые вопросы. Можно быстро найти нужный вопрос и ответ на него, выбрав категорию, с которой ваш вопрос связан.
+        </p>
+        <div class="faq-container">
+            <h3 class="">
+                При использовании обработки «МАССА-К: Унифицированная обработка 1С» или БПО 1С весы не находятся (не проходит тест устройства). Что делать?
+                 <span class="icon icon-arrow-circle-down smaller color-secondary"></span>
+            </h3>
+            <div class="faq-answer">
+                <p>
+                    Причин проблемы может быть несколько:<br><br>
+                    - связь с весами заблокирована программами с автоматическими сервисами обмена (Сервер терминалов и Торговая точка). Удалите с компьютера ненужные программы через Пуск.<br><br>
+                    - в 1С не установился драйвер. Для его установки рекомендуется первый раз запускать в 1С драйвер и обработки от имени администратора (щелчок правой кнопкой мыши по иконке 1С – Свойства – Совместимость – установить флаг «Выполнять от имени администратора»). При последующем использовании БПО 1С или обработок этого делать не надо.<br><br>
+                    - в весах не включен протокол обмена «1С». В терминалах серии R протокол «1С» всегда включен, для остальных весов – его нужно включать при настройке весов (см. в руководстве к весам пункт «Описание интерфейса»).<br><br>
+                    - весы не интегрированы с 1С. В частности, это относится к весам серии ВПМ.
+                </p>
+            </div>
+        </div>
+        <div class="faq-container">
+            <h3 class="">
+                Могут какие-то из ваших весов печатать штрихкод GS1 DataBar Expanded Stacked?
+                 <span class="icon icon-arrow-circle-down smaller color-secondary"></span>
+            </h3>
+            <div class="faq-answer">
+                <p>
+                    Причин проблемы может быть несколько:<br><br>
+                    - связь с весами заблокирована программами с автоматическими сервисами обмена (Сервер терминалов и Торговая точка). Удалите с компьютера ненужные программы через Пуск.<br><br>
+                    - в 1С не установился драйвер. Для его установки рекомендуется первый раз запускать в 1С драйвер и обработки от имени администратора (щелчок правой кнопкой мыши по иконке 1С – Свойства – Совместимость – установить флаг «Выполнять от имени администратора»). При последующем использовании БПО 1С или обработок этого делать не надо.<br><br>
+                    - в весах не включен протокол обмена «1С». В терминалах серии R протокол «1С» всегда включен, для остальных весов – его нужно включать при настройке весов (см. в руководстве к весам пункт «Описание интерфейса»).<br><br>
+                    - весы не интегрированы с 1С. В частности, это относится к весам серии ВПМ.
+                </p>
+            </div>
+        </div>
+        <div class="faq-container">
+            <h3 class="">
+                При нагружении вновь купленных весов отображается неправильный вес. Что делать?
+                 <span class="icon icon-arrow-circle-down smaller color-secondary"></span>
+            </h3>
+            <div class="faq-answer">
+                <p>
+                    Причин проблемы может быть несколько:<br><br>
+                    - связь с весами заблокирована программами с автоматическими сервисами обмена (Сервер терминалов и Торговая точка). Удалите с компьютера ненужные программы через Пуск.<br><br>
+                    - в 1С не установился драйвер. Для его установки рекомендуется первый раз запускать в 1С драйвер и обработки от имени администратора (щелчок правой кнопкой мыши по иконке 1С – Свойства – Совместимость – установить флаг «Выполнять от имени администратора»). При последующем использовании БПО 1С или обработок этого делать не надо.<br><br>
+                    - в весах не включен протокол обмена «1С». В терминалах серии R протокол «1С» всегда включен, для остальных весов – его нужно включать при настройке весов (см. в руководстве к весам пункт «Описание интерфейса»).<br><br>
+                    - весы не интегрированы с 1С. В частности, это относится к весам серии ВПМ.
+                </p>
+            </div>
+        </div>
+        <div class="faq-container">
+            <h3 class="">
+                Нужна помощь в выборе весов. К кому обратиться?
+                 <span class="icon icon-arrow-circle-down smaller color-secondary"></span>
+            </h3>
+            <div class="faq-answer">
+                <p>
+                    Причин проблемы может быть несколько:<br><br>
+                    - связь с весами заблокирована программами с автоматическими сервисами обмена (Сервер терминалов и Торговая точка). Удалите с компьютера ненужные программы через Пуск.<br><br>
+                    - в 1С не установился драйвер. Для его установки рекомендуется первый раз запускать в 1С драйвер и обработки от имени администратора (щелчок правой кнопкой мыши по иконке 1С – Свойства – Совместимость – установить флаг «Выполнять от имени администратора»). При последующем использовании БПО 1С или обработок этого делать не надо.<br><br>
+                    - в весах не включен протокол обмена «1С». В терминалах серии R протокол «1С» всегда включен, для остальных весов – его нужно включать при настройке весов (см. в руководстве к весам пункт «Описание интерфейса»).<br><br>
+                    - весы не интегрированы с 1С. В частности, это относится к весам серии ВПМ.
+                </p>
+            </div>
+        </div>
+        <div class="faq-container">
+            <h3 class="">
+                Как собрать весы МК-3_A?
+                 <span class="icon icon-arrow-circle-down smaller color-secondary"></span>
+            </h3>
+            <div class="faq-answer">
+                <p>
+                    Причин проблемы может быть несколько:<br><br>
+                    - связь с весами заблокирована программами с автоматическими сервисами обмена (Сервер терминалов и Торговая точка). Удалите с компьютера ненужные программы через Пуск.<br><br>
+                    - в 1С не установился драйвер. Для его установки рекомендуется первый раз запускать в 1С драйвер и обработки от имени администратора (щелчок правой кнопкой мыши по иконке 1С – Свойства – Совместимость – установить флаг «Выполнять от имени администратора»). При последующем использовании БПО 1С или обработок этого делать не надо.<br><br>
+                    - в весах не включен протокол обмена «1С». В терминалах серии R протокол «1С» всегда включен, для остальных весов – его нужно включать при настройке весов (см. в руководстве к весам пункт «Описание интерфейса»).<br><br>
+                    - весы не интегрированы с 1С. В частности, это относится к весам серии ВПМ.
+                </p>
+            </div>
+        </div>
+        <div class="faq-container">
+            <h3 class="">
+                Как сделать перенос строки, если наименования товаров длинные и не вмещаются в одну строку на этикетке?
+                 <span class="icon icon-arrow-circle-down smaller color-secondary"></span>
+            </h3>
+            <div class="faq-answer">
+                <p>
+                    Причин проблемы может быть несколько:<br><br>
+                    - связь с весами заблокирована программами с автоматическими сервисами обмена (Сервер терминалов и Торговая точка). Удалите с компьютера ненужные программы через Пуск.<br><br>
+                    - в 1С не установился драйвер. Для его установки рекомендуется первый раз запускать в 1С драйвер и обработки от имени администратора (щелчок правой кнопкой мыши по иконке 1С – Свойства – Совместимость – установить флаг «Выполнять от имени администратора»). При последующем использовании БПО 1С или обработок этого делать не надо.<br><br>
+                    - в весах не включен протокол обмена «1С». В терминалах серии R протокол «1С» всегда включен, для остальных весов – его нужно включать при настройке весов (см. в руководстве к весам пункт «Описание интерфейса»).<br><br>
+                    - весы не интегрированы с 1С. В частности, это относится к весам серии ВПМ.
+                </p>
+            </div>
+        </div>
+        <div class="faq-container">
+            <h3 class="">
+                При включении на терминале появляется сообщение “ERROR 10”. Что делать?
+                 <span class="icon icon-arrow-circle-down smaller color-secondary"></span>
+            </h3>
+            <div class="faq-answer">
+                <p>
+                    Причин проблемы может быть несколько:<br><br>
+                    - связь с весами заблокирована программами с автоматическими сервисами обмена (Сервер терминалов и Торговая точка). Удалите с компьютера ненужные программы через Пуск.<br><br>
+                    - в 1С не установился драйвер. Для его установки рекомендуется первый раз запускать в 1С драйвер и обработки от имени администратора (щелчок правой кнопкой мыши по иконке 1С – Свойства – Совместимость – установить флаг «Выполнять от имени администратора»). При последующем использовании БПО 1С или обработок этого делать не надо.<br><br>
+                    - в весах не включен протокол обмена «1С». В терминалах серии R протокол «1С» всегда включен, для остальных весов – его нужно включать при настройке весов (см. в руководстве к весам пункт «Описание интерфейса»).<br><br>
+                    - весы не интегрированы с 1С. В частности, это относится к весам серии ВПМ.
+                </p>
+            </div>
+        </div>
+        <div class="faq-container">
+            <h3 class="">
+                Как можно организовать продажу весовых товаров с соблюдением ФЗ-54?
+                 <span class="icon icon-arrow-circle-down smaller color-secondary"></span>
+            </h3>
+            <div class="faq-answer">
+                <p>
+                    Причин проблемы может быть несколько:<br><br>
+                    - связь с весами заблокирована программами с автоматическими сервисами обмена (Сервер терминалов и Торговая точка). Удалите с компьютера ненужные программы через Пуск.<br><br>
+                    - в 1С не установился драйвер. Для его установки рекомендуется первый раз запускать в 1С драйвер и обработки от имени администратора (щелчок правой кнопкой мыши по иконке 1С – Свойства – Совместимость – установить флаг «Выполнять от имени администратора»). При последующем использовании БПО 1С или обработок этого делать не надо.<br><br>
+                    - в весах не включен протокол обмена «1С». В терминалах серии R протокол «1С» всегда включен, для остальных весов – его нужно включать при настройке весов (см. в руководстве к весам пункт «Описание интерфейса»).<br><br>
+                    - весы не интегрированы с 1С. В частности, это относится к весам серии ВПМ.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="callback" data-waypoint="reviews" class="section-callback py-75">
+    <div class="container">
+        <h3 class="text-center mb-2">Остались вопросы ?</h3>
+        <p class="bigger text-center mb-50">
+            Задайте их нашему менеджеру и получите подробные ответы
+        </p>
+        <form class="row callbackForm" id="callbackFormSection">
+            <div class="col-md-4">
+                <div class="form-group mb-20">
+                    <label for="name-section">Имя: *</label>
+                    <input type="text" required name="name" id="name-section" class="form-control" placeholder="Ваше имя">
+                </div>
+                <div class="form-group mb-20">
+                    <label for="phone-section">Номер телефона: *</label>
+                    <input type="text" required name="phone" id="phone-section" class="form-control" placeholder="Ваш номер телефона">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group mb-20">
+                    <label for="extra-section">Сообщение:</label>
+                    <textarea type="text" style="height: 122px; resize: none" name="extra" id="extra-section" class="form-control" placeholder="Ваши вопросы или пожелания"></textarea>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <p class="smaller mt-5 mb-40 font-weight-100">* Внимание! Мы не передаем никаких данных 3-м лицам. Все конфиденциально.</p>
+                <button class="btn btn-primary w-100">
+                    <span class="ajax-status">Заказать обратный звонок</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+<section id="contacts" class="section-contacts pt-75">
+    <div class="container color-black-default">
+        <h3 class="text-center mb-50">
+            Мы рады с вами сотрудничать
+        </h3>
+        <div class="map-container row mx-0 align-items-center">
+            <script src="https://maps.api.2gis.ru/2.0/loader.js"></script>
+            <div id="map"></div>
+            <script>
+                DG.then(function() {
+                    var map;
+
+                    map = DG.map('map', {
+                        center: [43.251023, 76.963907],
+                        zoom: 15
+                    });
+
+                    DG.marker([43.251023, 76.966907]).addTo(map);
+
+                    map.scrollWheelZoom.disable();
+
+                });
+            </script>
+            <div class="box">
+                <h2 class="mb-1">
+                    Позвоните нам
+                </h2>
+                <p style="font-size: 1.4rem; margin-bottom: 37px; line-height: 17px;">
+                    и наши специалисты с удовольствием ответят на все ваши вопросы
+                </p>
+                <div class="media">
+                    <div class="media-left mr-4">
+                        <div class="round-30 bg-main">
+                            <span class="icon-telephone"></span>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <p class="font-weight-bold mb-1 normal">
+                            <a href="tel: 8 (727) 291-01-62">8 (727) 291-01-62</a><br>
+                            <a href="tel: 8 (727) 291-01-72">8 (727) 291-01-72</a>
+                        </p>
+                        <p class="mb-0" style="font-size: 1.2rem">
+                            Звонки по Казахстану
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <p class="pl-45 pl-md-0 smaller font-weight-500 mb-20" style="">
+                    РК, 050010 г. Алматы,<br>
+                    ул. Кабанбай батыра 10 угол, ул. Бегалина
+                </p>
+                <p class="pl-45 pl-md-0 smaller mb-2">
+                    <a href="mailto: info@m-s.kz">
+                        <span class="color-main font-weight-bold">info@m-s.kz</span>
+                    </a> (отдел продаж)
+                </p>
+                <p class="pl-45 pl-md-0 smaller mb-2">
+                    <a href="mailto: help@m-s.kz">
+                        <span class="color-main font-weight-bold">help@m-s.kz</span>
+                    </a> (техническая поддержка)
+                </p>
+                <p class="pl-45 pl-md-0 smaller mb-2">
+                    <a href="mailto: ux@m-s.kz ">
+                        <span class="color-main font-weight-bold">ux@m-s.kz </span>
+                    </a> (бухгалтерия)
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer pt-6 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 mb-5 text-md-left text-center">
+                <p class="bigger font-weight-500 mb-20">Категории товаров</p>
+                <p class="smaller">
+                    <a href="#">
+                        Кассовые аппараты
+                    </a>
+                </p>
+                <p class="smaller">
+                    <a href="#">
+                        Весы
+                    </a>
+                </p>
+                <p class="smaller">
+                    <a href="#">
+                        Денежные ящики
+                    </a>
+                </p>
+                <p class="smaller">
+                    <a href="#">
+                        Счетчики банкнот
+                    </a>
+                </p>
+                <p class="smaller">
+                    <a href="#">
+                        Детекторы валют
+                    </a>
+                </p>
+                <p class="smaller">
+                    <a href="#">
+                        Сканеры штрих кода
+                    </a>
+                </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-5 text-md-left text-center">
+                <p class="bigger font-weight-500 mb-20">Покупателям</p>
+                <p class="smaller">
+                    <a href="#">
+                        Избранные
+                    </a>
+                </p>
+                <p class="smaller">
+                    <a href="#">
+                        Корзина
+                    </a>
+                </p>
+                <p class="smaller">
+                    <a href="faq.html">
+                        FAQ
+                    </a>
+                </p>
+                <p class="smaller">
+                    <a href="about.html">
+                        О компании
+                    </a>
+                </p>
+                <p class="smaller">
+                    <a href="#">
+                        Политика Безопасности
+                    </a>
+                </p>
+                <p class="smaller">
+                    <a href="#">
+                        Условия соглашения
+                    </a>
+                </p>
+            </div>
+            <div class="col-12 col-lg-6 text-md-left text-center">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-5 mb-5">
+                        <p class="bigger font-weight-500 mb-20">Мы в соц. сетях</p>
+                        <p class="social-links text-left">
+                            <a href="#">
+                                <span class="icon-vk"></span>
+                            </a>
+                            <a href="#">
+                                <span class="icon-fb"></span>
+                            </a>
+                            <a href="#">
+                                <span class="icon-gmail"></span>
+                            </a><br>
+                            <a href="#">
+                                <span class="icon-odnoklassniki"></span>
+                            </a>
+                            <a href="#">
+                                <span class="icon-twitter"></span>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-7 mb-5">
+                        <p class="bigger font-weight-500 mb-20">Компания “Mega Service”</p>
+                        <p class="smaller color-gray-secondary mb-35">
+                            Мега Сервис предлагает своим клиентам самое современное оборудование и программное обеспечение от лучших российских и зарубежных производителей, позволяющее не просто выполнять каждодневную работу, но усилить позиции бизнеса.
+                        </p>
+                        <p class="font-weight-100">
+                            2018 © ТОО “Mega Service”
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="callbackModal" tabindex="-1" role="dialog" aria-labelledby="callbackModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-form form-fade-out" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="modal-title font-weight-500" id="callbackModalLabel" style="font-size: 2.6rem">Отправьте нам заявку и мы свяжемся с вами</p>
+                <button type="button" class="close modal-closer" style="font-size: 1.6rem;line-height: 4.6rem;" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <span class="icon-cancel"></span>
+                        </span>
+                </button>
+                <hr class="modal-hr">
+                <form id="callbackForm" class="row">
+                    <div class="form-group col-md-6 mb-5">
+                        <label for="name">Имя: *</label>
+                        <input type="text" required name="name" id="name" class="form-control" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group col-md-6 mb-5">
+                        <label for="phone">Номер телефона: *</label>
+                        <input type="text" required name="phone" id="phone" class="form-control" placeholder="Ваш номер телефона">
+                    </div>
+                    <div class="form-group col-md-12 mb-20">
+                        <label for="extra">Дополнительно: </label>
+                        <textarea type="text" name="extra" id="extra" class="form-control" placeholder="Введите ваше сообщение" style="height: 110px; resize: none"></textarea>
+                    </div>
+                    <p class="col-md-12 notifier" style="margin-bottom: 46px">
+                        * Внимание! Мы не передаем никаких данных 3-м лицам. Все конфиденциально.
+                    </p>
+                    <div class="col-md-12">
+                        <button class="btn btn-primary">
+                            <span class="ajax-status">Отправить</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal-dialog modal-thanks thanks-fade-in" style="display: none" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="h2 text-center font-weight-bold my-6">
+                    Большое спасибо! :D<br>
+                    Ваша заявка принята <span class="icon-checkmark"></span>
+                </p>
+                <p class="notifier text-right">
+                    <a href="#" data-dismiss="modal" class="color-gray">Закрыть</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- build:js -->
+<script src="assets/js/main.js"></script>
+<!-- endbuild -->
+</body>
+
+</html>

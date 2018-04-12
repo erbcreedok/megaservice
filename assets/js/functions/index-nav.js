@@ -1,13 +1,14 @@
 $(document).ready(function() {
     if ($('#sitepage').val() !== 'index' ) return;
     var navItems = $('.navbar .main-nav li');
+    var headerHeight = $('header').innerHeight() - 60;
 
     $('.navbar .main-nav li a').bind('click', function(e) {
         e.preventDefault();
         var id = $(this).attr('href');
         var elementOffset = document.querySelector(id).offsetTop;
         $('html, body').animate({
-            scrollTop: elementOffset - 50
+            scrollTop: elementOffset - headerHeight
         }, '1000');
     });
     var checkWaypoint = function( waypoint ) {
@@ -35,11 +36,11 @@ $(document).ready(function() {
         if (direction === 'up') {
             checkWaypoint(this);
         }
-    }, { offset: 45 });
+    }, { offset: headerHeight-2 });
 
     sections.waypoint(function(direction) {
         if (direction === 'down') {
             checkWaypoint(this);
         }
-    }, { offset: 55 });
+    }, { offset: headerHeight+2 });
 });

@@ -4,5 +4,8 @@
   color: $white;
   .digit-container {
     max-width: 220px;
+    @include media-breakpoint-down(md) {
+      margin: 0 auto 3rem;
+    }
   }
 }

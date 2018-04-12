@@ -1,0 +1,39 @@
+.section-faq {
+  .faq-container{
+    margin-bottom: 2rem;
+    .icon-arrow-circle-down {
+      display: inline-block;
+      transform: rotate(0deg);
+      transition: 200ms;
+    }
+    h3 {
+      margin-bottom: 2rem;
+      cursor: pointer;
+      &:hover {
+        color: $main-color;
+      }
+    }
+    .faq-answer {
+      max-height: 0;
+      transition: 200ms;
+      overflow: hidden;
+      padding: 0 15px;
+      background-color: $whitegray-default;
+      p {
+        margin-bottom: 0;
+      }
+    }
+    &.unscrolled {
+      h3 {
+        color: $main-color;
+      }
+      .icon-arrow-circle-down {
+        transform: rotate(180deg);
+      }
+      .faq-answer {
+        padding: 20px 15px;
+        max-height: 1000px;
+      }
+    }
+  }
+}

@@ -14,15 +14,21 @@
     font-weight: 900;
     height: 129px;
     @include media-breakpoint-down(md) {
-      font-size: 3.6rem;
+      font-size: 2.4rem;
       height: auto;
-      min-height: 129px;
+      min-height: 84px;
+      max-width: 450px;
     }
   }
   .main-info {
     max-width: 500px;
     margin-bottom: 4rem;
     font-size: 1.8rem;
+    opacity: 0;
+  }
+  .main-button {
+    opacity: 0;
+    animation-delay: 500ms;
   }
   .digit-container {
     padding: 10px 10px 50px;
