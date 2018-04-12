@@ -1,0 +1,73 @@
+.subheader {
+  background: $main-color;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 80px;
+  z-index: 1030;
+  color: $white;
+  height: 60px;
+  .main-row {
+    height: 60px;
+  }
+  .input-group {
+    height: 35px;
+    background: white;
+    padding: 7px 0 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    input {
+      padding-left: 10px;
+      font-size: 1.4rem;
+    }
+    input::placeholder {
+      color: $gray-default;
+    }
+    button {
+      padding: 0 20px;
+      font-size: 1.8rem;
+    }
+    input, select, button {
+      height: 20px;
+      background: $white;
+      border: none;
+      border-radius: 0;
+      outline: none;
+      box-shadow: none;
+      appearance: none;
+      position: relative;
+      z-index: 10;
+      font-size: 1.4rem;
+    }
+    select {
+      background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' v…0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") center no-repeat;
+      width: 170px;
+      padding: 0 15px;
+      border: 1px solid $gray-default;
+      border-top: none;
+      border-bottom: none;
+      position: relative;
+      z-index:11;
+      text-align: center;
+    }
+    .input-group-append, .input-group-text {
+      padding-left: 0;
+      padding-right: 0;
+      background: none;
+      border: none;
+      overflow: hidden;
+    }
+  }
+  a {
+    color: white;
+    transition: 400ms;
+    &:hover {
+      color: $secondary-color;
+      text-decoration: none;
+    }
+    .round-17 {
+      font-size: 1rem;
+      margin: 0 0.5rem;
+    }
+  }
+}

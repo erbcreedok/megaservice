@@ -13,6 +13,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-spinner:before {
+  content: "\e980";
+}
 .icon-arrow-circle-left:before {
   content: "\e900";
 }

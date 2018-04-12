@@ -4,19 +4,21 @@ footer {
   font-size: 1.4rem;
   line-height: 1.7rem;
   border-top: 1px solid $whitegray-secondary;
-  a, a:hover {
+  a {
+    color: white;
+    transition: .4s;
+  }
+  a:hover {
     text-decoration: none;
-    margin-bottom: 1rem;
+    color: $secondary-color;
   }
   .social-links {
-    font-size: 1.4rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin: -7px -8px -8px -7px;
     a {
       display: inline-block;
-      margin: 0 10px;
-      color: inherit;
-      &:hover {
-        background: $secondary-color;
-      }
+      margin: 7px 8px 8px 7px;
     }
   }
   hr{

@@ -19,7 +19,7 @@
   <body>
     <input type="hidden" value="index" id="sitepage">
     <header data-waypoint="main">
-    <nav class="navbar navbar-expand-md fixed-top">
+        <nav class="navbar navbar-expand-md fixed-top">
       <div class="container">
           <a class="navbar-brand" href=".">
               <img src="assets/img/logo.png" alt="">
@@ -55,7 +55,7 @@
           </div>
           <ul class="navbar-nav button-nav ml-auto">
           <li class="nav-item">
-              <button class="btn btn-primary">
+              <button class="btn btn-primary" data-toggle="modal" data-target="#callbackModal">
                   <span class="icon-chat"></span>
                   Свяжитесь с нами
               </button>
@@ -69,6 +69,60 @@
           </button>
       </div>
     </nav>
+        <div class="subheader">
+            <div class="container">
+                <div class="row main-row align-items-center">
+                    <div class="col-md-6">
+                        <form class="input-group">
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Введите нвазвание для поиска товара">
+                            <div class="input-group-append">
+                                <select name="category" class="custom-select" id="subheader-category">
+                                    <option selected value="all">Все категории</option>
+                                    <option value="1">Кассовые аппараты</option>
+                                    <option value="2">Весы</option>
+                                    <option value="3">Денежные ящики</option>
+                                    <option value="4">ПОС Терминалы</option>
+                                    <option value="5">Счетчики банкнот</option>
+                                    <option value="5">Детекторы валют</option>
+                                    <option value="5">Сканер штраз стизорского</option>
+                                </select>
+                            </div>
+                            <div class="input-group-append">
+                                <div class="input-group-text">
+                                    <button class="btn-search">
+                                        <span class="icon-search"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#">
+                            <span class="icon-faq"></span>
+                            <span>Вопросы/Ответы</span>
+                        </a>
+                    </div>
+                    <div class="col-md-2 text-right">
+                        <a href="#">
+                            <span class="icon-favorite"></span>
+                            <span>Избранное</span>
+                            <span class="round-17 bg-purple-default color-white">
+                                0
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-md-2 text-right">
+                        <a href="#">
+                            <span class="icon-cart"></span>
+                            <span>Корзина</span>
+                            <span class="round-17 bg-secondary color-white">
+                                2
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <section id="main" class="first-section d-flex align-items-center" style="background-color: #1A2426;background-image: url(assets/img/shop.jpg)">
         <div class="container">
@@ -82,6 +136,42 @@
                 <button class="btn btn-primary" data-toggle="modal" data-target="#callbackModal">
                     <span class="">Оставить заявку</span>
                 </button>
+            </div>
+        </div>
+    </section>
+    <section data-waypoint="main" class="section-item bg-whitegray">
+        <div class="container">
+            <div class="box box-item">
+                <div class="box-container">
+                    <div class="box-sale-mark">
+                        <span class="icon-percentage"></span>
+                    </div>
+                    <img src="assets/img/sample.jpg" class="box-image" alt="">
+                    <hr>
+                    <p style="margin-bottom: 3px" class="smallest">
+                        <span class="color-orange text-uppercase font-weight-bold">Акция</span>
+                    </p>
+                    <p class="mb-20 color-black-secondary font-weight-500">
+                        <a href="#">Кассовый аппарат Меркурий 115 ФKZ Казахстан с БФПИ</a>
+                    </p>
+                    <div class="row align-items-end">
+                        <div class="col-5 pr-1">
+                            <p style="margin-bottom: 3px" class="color-lightgray-light text-trough smallest">60 000 ₸</p>
+                            <p class="color-main font-weight-bold mb-0">
+                                45 000 ₸
+                            </p>
+                        </div>
+                        <div class="col-7 pl-1 text-right bigger color-secondary">
+                            <a href="#">
+                                <span class="icon-heart"></span>
+                            </a>
+                            <a href="#" class="ml-20">
+                                <span class="icon-cart"></span>
+                                <span class="smaller font-weight-500">Купить</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -543,7 +633,7 @@
             <p class="bigger text-center mb-50">
                 Задайте их нашему менеджеру и получите подробные ответы
             </p>
-            <form class="row" id="callbackFormSection">
+            <form class="row callbackForm" id="callbackFormSection">
                 <div class="col-md-4">
                     <div class="form-group mb-20">
                         <label for="name-section">Имя: *</label>
@@ -556,8 +646,8 @@
                 </div>
                 <div class="col-md-4">
                     <div class="form-group mb-20">
-                        <label for="burger-eating">Сообщение:</label>
-                        <textarea type="text" style="height: 122px; resize: none" name="message" id="burger-eating" class="form-control" placeholder="Ваши вопросы или пожелания"></textarea>
+                        <label for="extra-section">Сообщение:</label>
+                        <textarea type="text" style="height: 122px; resize: none" name="extra" id="extra-section" class="form-control" placeholder="Ваши вопросы или пожелания"></textarea>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -582,11 +672,11 @@
                         var map;
 
                         map = DG.map('map', {
-                            center: [51.115709, 71.42563],
-                            zoom: 16
+                            center: [43.251023, 76.963907],
+                            zoom: 15
                         });
 
-                        DG.marker([51.115709, 71.42863]).addTo(map);
+                        DG.marker([43.251023, 76.966907]).addTo(map);
 
                         map.scrollWheelZoom.disable();
 
@@ -722,7 +812,7 @@
                                 </a>
                                 <a href="#">
                                     <span class="icon-gmail"></span>
-                                </a>
+                                </a><br>
                                 <a href="#">
                                     <span class="icon-odnoklassniki"></span>
                                 </a>
@@ -748,13 +838,13 @@
     </footer>
 
     <div class="modal fade" id="callbackModal" tabindex="-1" role="dialog" aria-labelledby="callbackModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-form" role="document">
+        <div class="modal-dialog modal-form form-fade-out" role="document">
             <div class="modal-content">
                 <div class="modal-body">
-                    <p class="modal-title" id="callbackModalLabel" style="font-size: 2.6rem">Отправьте нам заявку и мы свяжемся с вами</p>
+                    <p class="modal-title font-weight-500" id="callbackModalLabel" style="font-size: 2.6rem">Отправьте нам заявку и мы свяжемся с вами</p>
                     <button type="button" class="close modal-closer" style="font-size: 1.6rem;line-height: 4.6rem;" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">
-                            <span class="icon-close"></span>
+                            <span class="icon-cancel"></span>
                         </span>
                     </button>
                     <hr class="modal-hr">
@@ -769,7 +859,7 @@
                         </div>
                         <div class="form-group col-md-12 mb-20">
                             <label for="extra">Дополнительно: </label>
-                            <textarea type="text" name="extra" id="extra" class="form-control" placeholder="Введите ваше сообщение"></textarea>
+                            <textarea type="text" name="extra" id="extra" class="form-control" placeholder="Введите ваше сообщение" style="height: 110px; resize: none"></textarea>
                         </div>
                         <p class="col-md-12 notifier" style="margin-bottom: 46px">
                             * Внимание! Мы не передаем никаких данных 3-м лицам. Все конфиденциально.
@@ -783,7 +873,7 @@
                 </div>
             </div>
         </div>
-        <div class="modal-dialog modal-thanks" style="display: none" role="document">
+        <div class="modal-dialog modal-thanks thanks-fade-in" style="display: none" role="document">
             <div class="modal-content">
                 <div class="modal-body">
                     <p class="h2 text-center font-weight-bold my-6">

@@ -10,6 +10,9 @@
 .color-secondary {
   color: $secondary-color;
 }
+.bg-secondary {
+  background-color: $secondary-color !important;
+}
 .color-white {
   color: $white;
 }
@@ -40,6 +43,15 @@
 .color-lightgray-default {
   color: $lightgray-default;
 }
+.color-lightgray-light {
+  color: $lightgray-light;
+}
 .color-lightblue-default {
   color: $lightblue-default;
+}
+.bg-purple-default {
+  background-color: $purple-default;
+}
+.color-orange {
+  color: $orange;
 }

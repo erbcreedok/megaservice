@@ -1,0 +1,15 @@
+.section-item {
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    top: 175px;
+    background: none;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 0;
+    .box-item {
+      margin-right: 27px;
+      margin-left: auto;
+    }
+  }
+}

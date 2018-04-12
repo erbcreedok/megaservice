@@ -3,6 +3,10 @@
   background-size: cover;
   background-position: center;
   min-height: 470px;
+  .container {
+    position: relative;
+    z-index: 2;
+  }
   .main-title {
     max-width: 697px;
     margin: 0 0 20px;

@@ -1,12 +1,11 @@
 header {
-  height: 80px;
+  height: 130px;
 }
 .navbar {
   font-size: 1.6rem;
   min-height: 80px;
   background: white;
   transition: background 150ms, padding 150ms 150ms;
-  z-index: 1090;
 }
 
 .nav-link, .nav-link:hover, .nav-item-subtitle {
