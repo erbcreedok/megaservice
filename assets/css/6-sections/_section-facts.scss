@@ -1,0 +1,8 @@
+.section-facts {
+  background: $main-color url( $path-image + '/map.png') center;
+  background-size: cover;
+  color: $white;
+  .digit-container {
+    max-width: 220px;
+  }
+}

@@ -29,7 +29,7 @@ $(document).ready(function() {
         $(navItems[0]).toggleClass('active', noOne);
     };
 
-    var sections = $('section');
+    var sections = $('section, header');
 
     sections.waypoint(function(direction) {
         if (direction === 'up') {

@@ -1,0 +1,17 @@
+.section-categories {
+  a {
+    color: $black;
+    transition: color 400ms;
+    &:hover {
+      color: $green;
+      text-decoration: none;
+    }
+  }
+  .category {
+    width: 165px;
+    margin-bottom: 15px;
+  }
+  .category-child {
+    font-size: 1.4rem;
+  }
+}

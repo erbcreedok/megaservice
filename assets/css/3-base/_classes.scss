@@ -1,6 +1,15 @@
 .text-uppercase {
   text-transform: uppercase;
 }
+.bigger {
+  font-size: 1.8rem;
+}
+.smaller {
+  font-size: 1.4rem;
+}
+.normal {
+  font-size: 1.6rem;
+}
 .pt-12 {
   padding-top: 120px;
 }
@@ -9,6 +18,9 @@
 }
 .pt-6 {
   padding-top: 60px;
+}
+.pt-75 {
+  padding-top: 75px;
 }
 .pb-12 {
   padding-bottom: 120px;
@@ -19,6 +31,9 @@
 .pb-6 {
   padding-bottom: 60px;
 }
+.pb-75 {
+  padding-bottom: 75px;
+}
 .py-12 {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -26,6 +41,10 @@
 .py-6 {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.py-75 {
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 .pl-45 {
   padding-left: 45px !important;
@@ -48,6 +67,9 @@
 .mb-25 {
   margin-bottom: 2.5rem !important;
 }
+.mb-35 {
+  margin-bottom: 3.5rem !important;
+}
 .mb-40 {
   margin-bottom: 40px !important;
 }
@@ -57,6 +79,10 @@
 .mb-6 {
   margin-bottom: 60px !important;
 }
+.my-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .my-50 {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -65,6 +91,23 @@
   margin-top: 60px;
   margin-bottom: 60px;
 }
+
+.font-weight-100 {
+  font-weight: 100;
+}
+.font-weight-500 {
+  font-weight: 500;
+}
+.font-weight-900 {
+  font-weight: 900;
+}
+
+.box {
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+
 @include media-breakpoint-up(md) {
   .px-md-9 {
     padding-left: 90px !important;

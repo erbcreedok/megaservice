@@ -3,30 +3,35 @@ html {
   font-size: 10px;
 }
 body {
-  font-family: 'PTSans', sans-serif;
+  font-family: 'MuseoSans', Helvetica, sans-serif;
   font-size: 1.6rem;
+  line-height: 1.24;
 }
 
 a {
   color: $link-color;
+  &.no-underline:hover {
+    text-decoration: none;
+  }
 }
 h1, .h1 {
-  font-size: 4.2rem;
-  font-weight: 600;
+  font-size: 3.6rem;
+  font-weight: 900;
 }
 h2, .h2 {
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: 2.4rem;
+  font-weight: 500;
   color: inherit;
 }
 h3, .h3 {
   font-size: 2rem;
-  font-weight: normal;
+  font-weight: 700;
   color: inherit;
   &.bigger {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
 }
+
 h4, .h4 {
   font-size: 1.8rem;
   font-weight: 500;

@@ -1,166 +1,23 @@
+//Enable popovers
+$(function () {
+    $('[data-toggle="popover"]').popover();
+});
+
 //index page
 $( document ).ready(function() {
     if ($('#sitepage').val() !== 'index' ) return;
 
-    $('.first-section').slick({
-        arrows: false,
-        dots: false,
-        draggable: false,
-        swipe: false,
-        fade: true,
-        touchMove: false,
-        autoplay: true,
-        autoplaySpeed: 8000
-    });
-    $('.first-section .slider-arrow.slider-arrow-next').click(function () {
-        $('.first-section').slick('slickNext');
-    });
-    $('.first-section .slider-arrow.slider-arrow-prev').click(function () {
-        $('.first-section').slick('slickPrev');
+    $('.reviews').slick({
+        dots: true,
+        nextArrow: '<div class="slider-arrow slider-arrow-blue slider-arrow-next slider-arrow-abs slick-arrow"><span class="icon-arrow-right"></span></div>',
+        prevArrow: '<div class="slider-arrow slider-arrow-blue slider-arrow-prev slider-arrow-abs slick-arrow"><span class="icon-arrow-left"></span></div>'
     });
 
-
-    $('.row-list').slick({
-        arrows: false,
-        asNavFor: '.row-tabs',
-        infinite: true,
-        adaptiveHeight: true,
-        draggable: false,
-        swipe: false,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    fade: false,
-                    draggable: true,
-                    swipe: true,
-                    arrows: true,
-                    prevArrow: '<div class="slider-arrow slider-arrow-blue slider-arrow-prev slider-arrow-abs"><span class="icon-arrow-left"></span></div>',
-                    nextArrow: '<div class="slider-arrow slider-arrow-blue slider-arrow-next slider-arrow-abs"><span class="icon-arrow-right"></span></div>',
-                }
-            }
-        ]
-    });
-    $('.row-tabs').slick({
-        asNavFor: '.row-list',
-        focusOnSelect: true,
-        vertical: true,
-        arrows: false,
-        slidesToShow: 7,
-        infinite: false,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    vertical: false,
-                    variableWidth: true,
-                    infinite: true,
-                    slidesToShow: 1,
-                    adaptiveHeight: true,
-                    centerMode: true
-                }
-            }
-        ]
-    });
-
-
-    var logoList = $('.logo-list');
-    logoList.slick({
-        arrows: true,
-        adaptiveHeight: true,
-        prevArrow: '<div class="slider-arrow slider-arrow-blue slider-arrow-prev slider-arrow-abs"><span class="icon-arrow-left"></span></div>',
-        nextArrow: '<div class="slider-arrow slider-arrow-blue slider-arrow-next slider-arrow-abs"><span class="icon-arrow-right"></span></div>'
-    });
-    $('.logo-tabs a').click(function() {
-        if (this.classList.contains('active')) return;
-        logoList.slick('slickGoTo', this.dataset.goto);
-        $('.logo-tabs a.active').removeClass('active');
-        $(this).addClass('active');
-    });
-    logoList.on('afterChange', function () {
-       var currentSlide = logoList.slick('slickCurrentSlide');
-        $('.logo-tabs a.active').removeClass('active');
-        $('.logo-tabs a[data-goto=' + currentSlide + ']').addClass('active');
-    });
-
-
-    $('.certificates').slick({
-        dots: false,
-        slidesToShow: 3,
-        prevArrow: '<div class="slider-arrow slider-arrow-blue slider-arrow-prev"><span class="icon-arrow-left"></span></div>',
-        nextArrow: '<div class="slider-arrow slider-arrow-blue slider-arrow-next"><span class="icon-arrow-right"></span></div>',
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
-    $('.certificates').magnificPopup({
-        delegate: '.certificate:not(.slick-cloned) a',
-        type: 'image',
-        tLoading: 'Загрузка изображения #%curr%...',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0, 1]
-        }
-    });
 });
 
-
-//partners page
-$(document).ready(function() {
-    if ($('#sitepage').val() !== 'partners') return;
-    var lists = $('.clients-list, .partners-list');
-    var initLists = function() {
-        lists.slick({
-            arrows: true,
-            adaptiveHeight: true,
-            prevArrow: '<div class="slider-arrow slider-arrow-blue slider-arrow-prev slider-arrow-abs"><span class="icon-arrow-left"></span></div>',
-            nextArrow: '<div class="slider-arrow slider-arrow-blue slider-arrow-next slider-arrow-abs"><span class="icon-arrow-right"></span></div>'
-        });
-    };
-    initLists();
-    $('.logo-tabs a').click(function() {
-        if (this.classList.contains('active')) return;
-        lists.removeClass('active');
-        lists.closest(this.dataset.target).addClass('active');
-        $('.logo-tabs a.active').removeClass('active');
-        $(this).addClass('active');
-        lists.slick('unslick');
-        initLists();
-    });
-    setTimeout(function(){
-        $('.partners-list').removeClass('active').removeClass('opacity-0');
-    },1000)
-
-
-    var reviewList = $('.review-list');
-    $('.review-list-total-here').html(reviewList.children().length );
-    reviewList.slick({
-        adaptiveHeight: true,
-        arrows: false
-    });
-
-    $('.review-list-arrows .slider-arrow.slider-arrow-next').click(function () {
-        reviewList.slick('slickNext');
-    });
-    $('.review-list-arrows .slider-arrow.slider-arrow-prev').click(function () {
-        reviewList.slick('slickPrev');
-    });
-
-    reviewList.on('afterChange', function (event, slick) {
-       $('.review-list-current-here').html( 1 + slick.currentSlide );
-       $('.review-list-total-here').html( slick.slideCount );
-    });
-});
-
-
+//Form section
 $(document).ready(function () {
-    $('input[name="phone"]').inputmask("+9 (999) 999 99 99");
+    $('input[name="phone"]').inputmask("+7 (799) 999 99 99");
 
     $('.callbackForm, #callbackForm').submit(function(e) {
         e.preventDefault();

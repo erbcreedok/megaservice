@@ -1,0 +1,17 @@
+.section-advantages {
+  .box {
+    background: $white;
+    padding: 29px 0 35px;
+    max-height: 200px;
+  }
+  .box-container {
+    max-width: 245px;
+    margin: 0 auto;
+  }
+  .box-icon {
+    font-size: 4rem;
+    color: $blue;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+  }
+}

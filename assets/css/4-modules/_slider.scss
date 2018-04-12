@@ -109,3 +109,23 @@
   }
 
 }
+
+.slick-dots {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  li {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: $lightblue-default;
+    margin: 0 7px;
+    &.slick-active {
+      background-color: $main-color;
+    }
+  }
+  button {
+    display: none;
+  }
+}

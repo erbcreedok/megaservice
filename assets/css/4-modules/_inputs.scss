@@ -1,14 +1,16 @@
 .form-group label {
   font-size: 1.4rem;
-  color: $black-default;
+  color: inherit;
+  font-weight: 500;
 }
 .form-group .form-control {
-  padding: 11px 15px;
+  padding: 11px 15px 10px;
   font-size: 1.6rem;
   font-weight: normal;
+  height: 40px;
   border-color: $whitegray-secondary;
   background: $whitegray-lightest;
-  border-radius: 5px;
+  border-radius: 4px;
   &::placeholder {
     color: $lightgray-secondary;
   }
