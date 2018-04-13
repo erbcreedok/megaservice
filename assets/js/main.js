@@ -14553,6 +14553,7 @@ $( document ).ready(function() {
             var startTime = element.dataset.typewriterStart ? element.dataset.typewriterStart : 0;
             var write = function(text) {
                 element.innerHTML = '';
+                element.style.display = null;
                 setTimeout(function () {
                     typeWriter.typeWriter(element, 0, text, speed);
                 }, delay);
