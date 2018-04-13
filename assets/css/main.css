@@ -10652,8 +10652,8 @@ header {
           border-radius: 50%; }
 
 .section-facts {
-  background: #36398B url("../img/map.png") center;
-  background-size: cover;
+  background: #36398B url("../img/map.jpg") center no-repeat;
+  background-size: contain;
   color: #ffffff; }
   .section-facts .digit-container {
     max-width: 220px; }
