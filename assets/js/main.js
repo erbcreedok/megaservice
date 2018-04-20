@@ -14662,16 +14662,20 @@ $( document ).ready(function() {
     });
 
 });
+
 //Form section
 $(document).ready(function () {
     $('input[name="phone"]').inputmask("+7 (799) 999 99 99");
 
     $('.callbackForm, #callbackForm').submit(function(e) {
         e.preventDefault();
+        a = this;
         var nameElement = this.elements.name;
         var phoneElement = this.elements.phone;
+        var extraElement = this.elements.extra;
         var name = nameElement.value.trim();
         var phone = phoneElement.value.trim();
+        var extra = extraElement.value.trim();
         var valid = true;
         if (name === '') {
             nameElement.classList.add('no-valid');
@@ -14687,11 +14691,11 @@ $(document).ready(function () {
         }
         if (!valid) return;
 
-        sendMessage(this, name, phone);
+        sendMessage(this, name, phone, extra);
 
     });
 
-    var sendMessage = function(form, name, phone) {
+    var sendMessage = function(form, name, phone, extra) {
         var message = '💡Новая заявка от ' + name;
         message += '\n    <i> Телефон: </i> ' + phone;
         message = encodeURIComponent(message);
@@ -14700,6 +14704,10 @@ $(document).ready(function () {
 
         $(form).attr('disabled', true);
         $(form.elements).attr('disabled', true);
+
+        $.post('//c-m-s.kz/mail.php', {name: name, phone: phone, message: extra}, function (response) {
+            console.log(response);
+        });
 
         setTimeout(function() {
             setTimeout(function () {
