@@ -10226,8 +10226,7 @@ header {
   .navbar-filled .navbar-brand span, .navbar-filled .nav-link, .navbar-filled .nav-link:hover, .navbar-filled .nav-item-subtitle {
     color: #000000; }
   .navbar-filled .phone-nav .nav-item-subtitle {
-    position: static;
-    padding: 0; }
+    position: static; }
   @media (max-width: 767.98px) {
     .navbar-filled {
       background: #ffffff;
@@ -10258,8 +10257,7 @@ header {
     .navbar .navbar-brand span, .navbar .nav-link, .navbar .nav-link:hover, .navbar .nav-item-subtitle {
       color: #000000; }
     .navbar .phone-nav .nav-item-subtitle {
-      position: static;
-      padding: 0; } }
+      position: static; } }
   @media (max-width: 767.98px) and (max-width: 767.98px) {
     .navbar {
       background: #ffffff;
@@ -10576,7 +10574,7 @@ header {
   max-height: 200px; }
 
 .section-advantages .box-container {
-  max-width: 245px;
+  max-width: 280px;
   margin: 0 auto; }
 
 .section-advantages .box-icon {
