@@ -4,12 +4,17 @@ $(document).ready(function() {
     var headerHeight = $('header').innerHeight() - 60;
 
     $('.navbar .main-nav li a').bind('click', function(e) {
-        e.preventDefault();
         var id = $(this).attr('href');
-        var elementOffset = document.querySelector(id).offsetTop;
-        $('html, body').animate({
-            scrollTop: elementOffset - headerHeight
-        }, '1000');
+        try {
+            var elementOffset = document.querySelector(id).offsetTop;
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: elementOffset - headerHeight
+            }, '1000');
+        } catch (DOMException) {
+            console.log('Ignoring selector');
+        }
+
     });
     var checkWaypoint = function( waypoint ) {
         var hash = '';

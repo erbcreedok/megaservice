@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbfc174c-e145-44dd-b001-ceba0cf5c3d2" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist.zip" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/6-sections/_navbar.scss" afterPath="$PROJECT_DIR$/assets/css/6-sections/_navbar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/6-sections/_section-advantages.scss" afterPath="$PROJECT_DIR$/assets/css/6-sections/_section-advantages.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/faq.html" afterPath="$PROJECT_DIR$/faq.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/functions.js" afterPath="$PROJECT_DIR$/assets/js/functions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/functions/index-nav.js" afterPath="$PROJECT_DIR$/assets/js/functions/index-nav.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/main.js" afterPath="$PROJECT_DIR$/assets/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,14 +19,13 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="488" column="39" lean-forward="false" selection-start-line="488" selection-start-column="39" selection-end-line="488" selection-end-column="39" />
+            <state relative-caret-position="229">
+              <caret line="32" column="53" lean-forward="false" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#button#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -40,8 +38,35 @@
                 <element signature="n#p#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1524745610000" expanded="true" signature="43471:43696" ph="..." />
+                <marker date="1529389714000" expanded="true" signature="43602:43827" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="243" column="3" lean-forward="false" selection-start-line="243" selection-start-column="3" selection-end-line="243" selection-end-column="3" />
+              <folding>
+                <element signature="e#127#6067#0" expanded="false" />
+                <element signature="e#6114#6287#0" expanded="false" />
+                <element signature="e#6335#7373#0" expanded="false" />
+                <element signature="e#7422#9845#0" expanded="false" />
+                <element signature="e#8979#9829#0" expanded="false" />
+                <marker date="1529390278000" expanded="true" signature="8671:8693" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index-nav.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/functions/index-nav.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,7 +74,7 @@
       <file leaf-file-name="faq.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/faq.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
+            <state relative-caret-position="2085">
               <caret line="478" column="9" lean-forward="false" selection-start-line="478" selection-start-column="9" selection-end-line="478" selection-end-column="9" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
@@ -80,8 +105,8 @@
       <file leaf-file-name="_navbar.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/6-sections/_navbar.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="145" column="3" lean-forward="true" selection-start-line="145" selection-start-column="3" selection-end-line="145" selection-end-column="3" />
+            <state relative-caret-position="2175">
+              <caret line="145" column="3" lean-forward="false" selection-start-line="145" selection-start-column="3" selection-end-line="145" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -90,7 +115,7 @@
       <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
+            <state relative-caret-position="1380">
               <caret line="431" column="52" lean-forward="false" selection-start-line="431" selection-start-column="52" selection-end-line="431" selection-end-column="52" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
@@ -177,7 +202,6 @@
         <option value="$PROJECT_DIR$/assets/css/3-base/_colors.scss" />
         <option value="$PROJECT_DIR$/assets/css/6-sections/_section-item.scss" />
         <option value="$PROJECT_DIR$/assets/css/6-sections/_section-control.scss" />
-        <option value="$PROJECT_DIR$/assets/js/functions/index-nav.js" />
         <option value="$PROJECT_DIR$/assets/css/6-sections/_section-reviews.scss" />
         <option value="$PROJECT_DIR$/assets/css/6-sections/_footer.scss" />
         <option value="$PROJECT_DIR$/assets/css/3-base/_base.scss" />
@@ -192,13 +216,14 @@
         <option value="$PROJECT_DIR$/assets/css/6-sections/_section-about.scss" />
         <option value="$PROJECT_DIR$/assets/css/6-sections/_section-facts.scss" />
         <option value="$PROJECT_DIR$/assets/css/3-base/_classes.scss" />
-        <option value="$PROJECT_DIR$/assets/js/functions.js" />
         <option value="$PROJECT_DIR$/main-page.html" />
         <option value="$PROJECT_DIR$/assets/css/6-sections/_section-advantages.scss" />
         <option value="$PROJECT_DIR$/assets/css/6-sections/_navbar.scss" />
         <option value="$PROJECT_DIR$/faq.html" />
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/js/functions/index-nav.js" />
+        <option value="$PROJECT_DIR$/assets/js/functions.js" />
       </list>
     </option>
   </component>
@@ -238,7 +263,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,6 +272,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="MegaService" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MegaService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MegaService" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MegaService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MegaService" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="functions" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -308,6 +372,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -433,19 +498,20 @@
       <workItem from="1523876756005" duration="622000" />
       <workItem from="1524240964642" duration="1608000" />
       <workItem from="1524733528992" duration="403000" />
-      <workItem from="1524743542444" duration="1316000" />
+      <workItem from="1524743542444" duration="1544000" />
+      <workItem from="1529389624371" duration="585000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148068000" />
+    <option name="totallyTimeSpent" value="148881000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31831187" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32260373" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -612,13 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/functions/index-nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="54" lean-forward="false" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/6-sections/_section-item.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -637,13 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/functions/nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="45" column="3" lean-forward="false" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -749,7 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="73" lean-forward="false" selection-start-line="1" selection-start-column="73" selection-end-line="1" selection-end-column="73" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -764,30 +815,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1605">
           <caret line="107" column="3" lean-forward="false" selection-start-line="107" selection-start-column="3" selection-end-line="107" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main-page.html" />
-    <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="218" column="79" lean-forward="false" selection-start-line="218" selection-start-column="79" selection-end-line="218" selection-end-column="79" />
-          <folding>
-            <element signature="e#127#6067#0" expanded="false" />
-            <element signature="e#6114#6287#0" expanded="false" />
-            <element signature="e#6335#7373#0" expanded="false" />
-            <element signature="e#8979#9829#0" expanded="false" />
-            <marker date="1524242397000" expanded="true" signature="8671:8693" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/6-sections/_section-advantages.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -795,21 +830,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/6-sections/_navbar.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="145" column="3" lean-forward="true" selection-start-line="145" selection-start-column="3" selection-end-line="145" selection-end-column="3" />
+        <state relative-caret-position="2175">
+          <caret line="145" column="3" lean-forward="false" selection-start-line="145" selection-start-column="3" selection-end-line="145" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/faq.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
+        <state relative-caret-position="2085">
           <caret line="478" column="9" lean-forward="false" selection-start-line="478" selection-start-column="9" selection-end-line="478" selection-end-column="9" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
@@ -838,7 +872,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
+        <state relative-caret-position="1380">
           <caret line="431" column="52" lean-forward="false" selection-start-line="431" selection-start-column="52" selection-end-line="431" selection-end-column="52" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
@@ -857,11 +891,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="488" column="39" lean-forward="false" selection-start-line="488" selection-start-column="39" selection-end-line="488" selection-end-column="39" />
+        <state relative-caret-position="229">
+          <caret line="32" column="53" lean-forward="false" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#button#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -874,7 +907,38 @@
             <element signature="n#p#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1524745610000" expanded="true" signature="43471:43696" ph="..." />
+            <marker date="1529389714000" expanded="true" signature="43602:43827" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/functions/nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="3" lean-forward="false" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/functions/index-nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="243" column="3" lean-forward="false" selection-start-line="243" selection-start-column="3" selection-end-line="243" selection-end-column="3" />
+          <folding>
+            <element signature="e#127#6067#0" expanded="false" />
+            <element signature="e#6114#6287#0" expanded="false" />
+            <element signature="e#6335#7373#0" expanded="false" />
+            <element signature="e#7422#9845#0" expanded="false" />
+            <element signature="e#8979#9829#0" expanded="false" />
+            <marker date="1529390278000" expanded="true" signature="8671:8693" ph="..." />
           </folding>
         </state>
       </provider>
